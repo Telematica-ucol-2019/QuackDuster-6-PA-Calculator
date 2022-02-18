@@ -1,0 +1,54 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calcuApp.MainPage"
+             Title="Grid alignment demo">
+    <Grid BackgroundColor="#24252a">
+
+        <Grid Grid.Row="0"  Margin="0,0,0,200">
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="20,0" VerticalOptions="EndAndExpand">
+                <Label TextColor="White"  Text="0" HorizontalOptions="EndAndExpand" FontSize="48"></Label>
+            </StackLayout>
+        </Grid>
+        <Grid Grid.Row="1"   Margin="0,-200,0,0">
+            <StackLayout Orientation="Vertical"  Margin="0">
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2">
+                    <Button  BackgroundColor="gray" TextColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" Text="C" HorizontalOptions="FillAndExpand" ></Button>
+                    <Button Text="+/-" TextColor="White" BackgroundColor="gray" HorizontalOptions="FillAndExpand" FontSize="Title"  WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="%" TextColor="White" BackgroundColor="gray" HorizontalOptions="FillAndExpand" FontSize="Title"  WidthRequest="50" HeightRequest="50" ></Button>
+                    <Button Text="/" TextColor="White" BackgroundColor="#F1C40F " HorizontalOptions="FillAndExpand" FontSize="Title"  WidthRequest="50" HeightRequest="50" ></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2">
+                    <Button TextColor="White" BackgroundColor="gray"  Text="7" HorizontalOptions="FillAndExpand"  FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button TextColor="White" BackgroundColor="gray"  Text="8" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button TextColor="White" BackgroundColor="gray"  Text="9" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button  BackgroundColor="#F1C40F"  Text="x" TextColor="White" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" >
+                    <Button TextColor="White" BackgroundColor="gray"  Text="4" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button TextColor="White" BackgroundColor="gray"  Text="5" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button TextColor="White" BackgroundColor="gray"  Text="6" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button  BackgroundColor="#F1C40F "  Text="-" TextColor="White" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2">
+                    <Button TextColor="White" BackgroundColor="gray"  Text="1" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button TextColor="White" BackgroundColor="gray"  Text="2" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button TextColor="White" BackgroundColor="gray"  Text="3" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button  BackgroundColor="#F1C40F"  Text="+" TextColor="White"  HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2">
+                    <Button TextColor="White" BackgroundColor="gray"  Text="0" HorizontalOptions="FillAndExpand" FontSize="Title" ></Button>
+                    <Button TextColor="White" BackgroundColor="gray"  Text="." HorizontalOptions="Center" WidthRequest="98" FontSize="Title" ></Button>
+                    <Button  Text="="  TextColor="White" BackgroundColor="#F1C40F" HorizontalOptions="End" WidthRequest="99" FontSize="Title" ></Button>
+                </StackLayout>
+
+            </StackLayout>
+
+        </Grid>
+
+    </Grid>
+</ContentPage>
